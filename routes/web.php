@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('generate-pdf','HomeController@generatePDF');
+Route::resource('tasks','TodoController');
+Route::resource('posts','PostController');
+Route::get( 'user/profile', function(){
+
+});

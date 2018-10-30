@@ -32,3 +32,20 @@ Integrate vue router to your application
 2. Add following code to app.js
 	import VueRouter from 'vue-router'
 	Vue.use(VueRouter)
+
+##Make model view controller at a single commands with migration
+	php artisan make:model Todo -m -r
+
+1.Create request to validation 
+	php artisan make:request TodoRequest
+
+2.After controller is created we can check route list
+	php artisan route:list
+
+##To generate a seeder, execute the 
+	php artisan make:seeder UsersTableSeeder
+
+	A seeder class only contains one method by default: run. This method is called when the  db:seed Artisan command is executed. Within the run method, you may insert data into your database however you wish. You may use the query builder to manually insert data or you may use Eloquent model factories.
+
+	php artisan db:seed  or by perticular seeder class name 
+	php artisan db:seed --class=UsersTableSeeder

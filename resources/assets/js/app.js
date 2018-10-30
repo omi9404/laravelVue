@@ -19,17 +19,20 @@ Vue.use(VueRouter)
 
 const example = require('./components/ExampleComponent.vue');
 const sample = require('./components/SampleComponent.vue');
+const tasks = require('./components/TasksComponent.vue');
 const routes = [
-{
-	path: '/example',
-	component: example
-},
-{
-	path: '/sample',
-	component : sample
-}
-
-
+	{
+		path: '/',
+		component: tasks
+	},
+	{
+		path: '/example',
+		component: example
+	},
+	{
+		path: '/sample',
+		component : sample
+	}
 ];
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
